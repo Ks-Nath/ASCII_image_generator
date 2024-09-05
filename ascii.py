@@ -147,6 +147,7 @@ if __name__ == '__main__':
 try: 
     main()
     st.image("content.png", caption="YAHHOOOO")
+    st.download_button("Download image","content.png",file_name="content.png",mime="image/png")        
 except:
     st.write("Author : K.$.Nath")
 convert()

@@ -6,6 +6,16 @@ from PIL import Image
 
 # Page title
 st.title('ASCII Image generator')
+st.text('Author : K.$.Nath')
+
+#Hide footer and the hamburger
+hide_streamlit_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
 from io import StringIO
 

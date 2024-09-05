@@ -138,6 +138,6 @@ try:
     main()
     st.image("content.png", caption="YAHHOOOO")
 except:
-    st.write("Author : K.$.Nath)
+    st.write("Author : K.$.Nath")
 convert()
 

@@ -134,7 +134,10 @@ if __name__ == '__main__':
     convert()
 
 # run program
-main()
+try: 
+    main()
+    st.image("content.png", caption="YAHHOOOO")
+except:
+    st.write("Author : K.$.Nath)
 convert()
 
-st.image("content.png", caption="YAHHOOOO")

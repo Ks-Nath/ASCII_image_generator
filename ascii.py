@@ -136,23 +136,14 @@ def textfile_to_image(textfile_path):
     for i, line in enumerate(lines):
         vertical_position = int(round(margin_pixels + (i * realistic_line_height)))
         draw.text((horizontal_position, vertical_position), line, fill=font_color, font=font)
-
     return image
-
-
-if __name__ == '__main__':
-    convert()
 
 # run program
 try: 
     main()
-    #Display image        
-    st.image("content.png", caption="YAHHOOOO")
-
-    #Download image
+    convert()
+    st.image("content.png", caption="SUCCESS")
     with open("content.png","rb") as file:
-        btn = st.download_button(label="Download image",data=file,file_name="content.png",mime="image/png")        
+        btn = st.download_button(label="Download image",data=file,file_name="content.png",mime="image/png",)
 except:
     st.write("Author : K.$.Nath")
-convert()
-

@@ -146,9 +146,12 @@ if __name__ == '__main__':
 # run program
 try: 
     main()
+    #Display image        
     st.image("content.png", caption="YAHHOOOO")
+
+    #Download image
     with open("content.png","rb") as file:
-        btn = st.download_button("Download image","content.png",file_name="content.png",mime="image/png")        
+        btn = st.download_button(label="Download image",data=file,file_name="content.png",mime="image/png")        
 except:
     st.write("Author : K.$.Nath")
 convert()
